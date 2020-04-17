@@ -1,55 +1,26 @@
-from argparse import ArgumentParser
-from json import loads, dumps
-from tempfile import gettempdir
-from os import path, remove
+import os
+from Course_1/file_descript import File
+path_to_file = 'some_filename'
+os.path.exists(path_to_file)
+file_obj = File(path_to_file)
+os.path.exists(path_to_file)
+file_obj.read()
+file_obj.write('some text')
+file_obj.read()
+file_obj.write('other text')
 
+file_obj.read()
 
-STORAGE_PATH = path.join(gettempdir(), 'storage.data')
+file_obj_1 = File(path_to_file + '_1')
+file_obj_2 = File(path_to_file + '_2')
+file_obj_1.write('line 1\n')
 
+file_obj_2.write('line 2\n')
 
-def get_data():
-    if not path.exists(STORAGE_PATH):
-        return {}
+new_file_obj = file_obj_1 + file_obj_2
+isinstance(new_file_obj, File)
 
-    with open(STORAGE_PATH, 'r') as f:
-        raw_data = f.read()
-        if raw_data:
-            return loads(raw_data)
+print(new_file_obj)
 
-        return {}
-
-
-def put(key, value):
-    data = get_data()
-
-    if key in data:
-        data[key].append(value)
-    else:
-        data[key] = [value]
-
-    with open(STORAGE_PATH, 'w') as f:
-        f.write(dumps(data))
-
-
-def get(key):
-    data = get_data()
-
-    return data.get(key)
-
-
-if __name__ == '__main__':
-    parser = ArgumentParser()
-    parser.add_argument('--key', help='Key')
-    parser.add_argument('--val', help='Value')
-    parser.add_argument('--clear', action='store_true', help='Clear')
-
-    args = parser.parse_args()
-
-    if args.clear:
-        remove(STORAGE_PATH)
-    elif args.key and args.val:
-        put(args.key, args.val)
-    elif args.key:
-        print(get(args.key))
-    else:
-        print('Wrong command')
+for line in new_file_obj:
+    print(ascii(line))
