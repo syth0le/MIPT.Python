@@ -1,26 +1,27 @@
-import os
-from Course_1/file_descript import File
-path_to_file = 'some_filename'
-os.path.exists(path_to_file)
-file_obj = File(path_to_file)
-os.path.exists(path_to_file)
-file_obj.read()
-file_obj.write('some text')
-file_obj.read()
-file_obj.write('other text')
+# реализация сервера для тестирования метода get по заданию - Клиент для отправки метрик
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-file_obj.read()
+import socket
 
-file_obj_1 = File(path_to_file + '_1')
-file_obj_2 = File(path_to_file + '_2')
-file_obj_1.write('line 1\n')
+sock = socket.socket()
+sock.bind(('127.0.0.1', 8888))
+sock.listen(1)
+conn, addr = sock.accept()
 
-file_obj_2.write('line 2\n')
+print('Соединение установлено:', addr)
 
-new_file_obj = file_obj_1 + file_obj_2
-isinstance(new_file_obj, File)
+# переменная response хранит строку возвращаемую сервером, если вам для
+# тестирования клиента необходим другой ответ, измените ее
+response = b'ok\npalm.cpu 10.5 1501864247\neardrum.cpu 15.3 1501864259\n\n'
 
-print(new_file_obj)
+while True:
+    data = conn.recv(1024)
+    if not data:
+        break
+    request = data.decode('utf-8')
+    print(f'Получен запрос: {ascii(request)}')
+    print(f'Отправлен ответ {ascii(response.decode("utf-8"))}')
+    conn.send(response)
 
-for line in new_file_obj:
-    print(ascii(line))
+conn.close()
