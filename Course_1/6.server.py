@@ -41,17 +41,23 @@ class ClientServerProtocol(asyncio.Protocol):
         return status + '\n'
 
     @staticmethod
-    def receive_data(key, metric, timestamp):
+    def receive_data(key, value, timestamp):
         status = 'ok\n'
-        local = (timestamp, metric)
+        local = (timestamp, value)
         if key not in data_storage:
             data_storage[key] = list()
         if local not in data_storage[key]:
-            for elem in data_storage[key]:
-                if timestamp == elem[0]:
+            local_list = data_storage.get(key, [])
 
-            data_storage[key].append(local)
-            data_storage[key].sort()
+            for i, metric in enumerate(local_list):
+                if metric[0] == timestamp:
+                    local_list.remove((timestamp, metric[1]))
+                    local_list.insert(i, (timestamp, value))
+                    return status + '\n'
+
+            local_list.append((timestamp, value))
+            data_storage.update({key: local_list})
+            return status + '\n'
         return status + '\n'
 
 
