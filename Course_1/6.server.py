@@ -16,9 +16,13 @@ class ClientServerProtocol(asyncio.Protocol):
         self.transport.write(resp.encode())
 
     def value_processing(self, param):
-        if param[0] == "put":
-            return self.receive_data(param[1], param[2], param[3])
-        elif param[0] == "get":
+        if param[0] == "put" and len(param) == 4:
+            try:
+                return self.receive_data(param[1], float(param[2]), int(param[3]))
+            except ValueError:
+                return 'error\nwrong command\n\n'
+
+        elif param[0] == "get" and len(param) == 2:
             return self.send_data(param[1])
         else:
             return 'error\nwrong command\n\n'
@@ -40,9 +44,12 @@ class ClientServerProtocol(asyncio.Protocol):
     def receive_data(key, metric, timestamp):
         status = 'ok\n'
         local = (timestamp, metric)
-        if key not  in data_storage:
+        if key not in data_storage:
             data_storage[key] = list()
-        if local not  in data_storage[key]:
+        if local not in data_storage[key]:
+            for elem in data_storage[key]:
+                if timestamp == elem[0]:
+
             data_storage[key].append(local)
             data_storage[key].sort()
         return status + '\n'
