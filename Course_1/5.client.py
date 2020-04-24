@@ -69,3 +69,19 @@ class Client:
         except socket.error as error:
             raise ClientError("Put data unavailable", error)
 
+
+if __name__ == "__main__":
+    client = Client("127.0.0.1", 10001, timeout=10)
+    client.put("first", 0.5, timestamp=1)
+    client.put("first", 2.0, timestamp=2)
+    client.put("first", 0.5, timestamp=3)
+    client.put("snf", 0.5, timestamp=3)
+    client.put("second", 3, timestamp=4)
+    client.put("second", 4, timestamp=5)
+    client.put("first", 0.54, timestamp=1)
+    client.put("first", 2.04, timestamp=2)
+    client.put("first", 0.52, timestamp=3)
+    client.put("second", 33, timestamp=4)
+    client.put("33", 33, timestamp=4)
+    print(client.get("*"))
+
