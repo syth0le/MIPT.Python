@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="328dbf98-8049-4a1a-b3d1-2ca7aad84e0b" name="Default Changelist" comment="update MIPT">
+      <change afterPath="$PROJECT_DIR$/Course_2/5_game_adapter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Course_2/6_game_observer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course_2/1_factorize_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Course_2/1_factorize_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Course_2/game_decorator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Course_2/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Course_2/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +37,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.1_factorize_test">
-    <configuration name="1_factorize_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.5_game_adapter">
+    <configuration name="3_code_refactoring" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MIPT.Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -48,7 +51,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Course_2/1_factorize_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Course_2/3_code_refactoring.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -57,7 +60,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="5.client" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="5_game_adapter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MIPT.Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -65,56 +68,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Course_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Course_2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Course_1/5.client.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="6.server" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MIPT.Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Course_1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Course_1/6.server.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="solution" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MIPT.Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Course_1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Course_1/solution.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Course_2/5_game_adapter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,13 +104,50 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_decorator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MIPT.Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/test_decorator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in Course_2" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="MIPT.Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Course_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Course_2&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.1_factorize_test" />
+        <item itemvalue="Python.5_game_adapter" />
+        <item itemvalue="Python tests.Unittests in Course_2" />
+        <item itemvalue="Python.test_decorator" />
         <item itemvalue="Python.test (1)" />
-        <item itemvalue="Python.5.client" />
-        <item itemvalue="Python.solution" />
-        <item itemvalue="Python.6.server" />
+        <item itemvalue="Python.3_code_refactoring" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +190,12 @@
       <workItem from="1587584187100" duration="5050000" />
       <workItem from="1587635683370" duration="622000" />
       <workItem from="1587668152552" duration="37057000" />
-      <workItem from="1587845008944" duration="6424000" />
+      <workItem from="1587845008944" duration="17542000" />
+      <workItem from="1588105425387" duration="7802000" />
+      <workItem from="1588156692700" duration="10000" />
+      <workItem from="1588156816763" duration="11876000" />
+      <workItem from="1588194732518" duration="63000" />
+      <workItem from="1588200326847" duration="2975000" />
     </task>
     <task id="LOCAL-00001" summary="3rd week">
       <created>1587128376277</created>
@@ -243,37 +244,25 @@
     </state>
     <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.864/1920.156.1360.768@0.0.1536.864" timestamp="1587128669661" />
     <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587342478148" />
-    <state width="1493" height="-12" key="GridCell.Tab.0.bottom" timestamp="1587895119571">
+    <state width="1493" height="367" key="GridCell.Tab.1.bottom" timestamp="1588109725732">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="-12" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1587895119571" />
-    <state width="1493" height="-12" key="GridCell.Tab.0.center" timestamp="1587895119571">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="-12" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1587895119571" />
-    <state width="1493" height="-12" key="GridCell.Tab.0.left" timestamp="1587895119567">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="-12" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1587895119567" />
-    <state width="1493" height="-12" key="GridCell.Tab.0.right" timestamp="1587895119571">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="-12" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1587895119571" />
-    <state width="1493" height="367" key="GridCell.Tab.1.bottom" timestamp="1587764383112">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
+    <state width="1493" height="367" key="GridCell.Tab.1.bottom/0.0.1536.864/-1360.164.1360.768@0.0.1536.864" timestamp="1588109725732" />
     <state width="1493" height="367" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1587764383112" />
-    <state width="1493" height="367" key="GridCell.Tab.1.center" timestamp="1587764383112">
+    <state width="1493" height="367" key="GridCell.Tab.1.center" timestamp="1588109725732">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state width="1493" height="367" key="GridCell.Tab.1.center/0.0.1536.864/-1360.164.1360.768@0.0.1536.864" timestamp="1588109725732" />
     <state width="1493" height="367" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1587764383112" />
-    <state width="1493" height="367" key="GridCell.Tab.1.left" timestamp="1587764383112">
+    <state width="1493" height="367" key="GridCell.Tab.1.left" timestamp="1588109725732">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state width="1493" height="367" key="GridCell.Tab.1.left/0.0.1536.864/-1360.164.1360.768@0.0.1536.864" timestamp="1588109725732" />
     <state width="1493" height="367" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1587764383112" />
-    <state width="1493" height="367" key="GridCell.Tab.1.right" timestamp="1587764383112">
+    <state width="1493" height="367" key="GridCell.Tab.1.right" timestamp="1588109725732">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state width="1493" height="367" key="GridCell.Tab.1.right/0.0.1536.864/-1360.164.1360.768@0.0.1536.864" timestamp="1588109725732" />
     <state width="1493" height="367" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1587764383112" />
     <state x="277" y="74" key="SettingsEditor" timestamp="1586967108842">
       <screen x="0" y="0" width="1536" height="864" />
@@ -284,28 +273,33 @@
     </state>
     <state x="361" y="160" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.156.1360.768@0.0.1536.864" timestamp="1587128640174" />
     <state x="361" y="160" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587342490093" />
-    <state x="444" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1587845020254">
+    <state x="444" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1588200328091">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state x="444" y="255" key="com.intellij.ide.util.TipDialog/0.0.1536.864/-1360.164.1360.768@0.0.1536.864" timestamp="1588194792589" />
     <state x="444" y="255" key="com.intellij.ide.util.TipDialog/0.0.1536.864/1920.156.1360.768@0.0.1536.864" timestamp="1587128762240" />
-    <state x="444" y="255" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1587845020254" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586957443899">
+    <state x="444" y="255" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1588200328091" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1588201823112">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1586957443899" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1588201823112" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MIPT_Python$solution.coverage" NAME="solution Coverage Results" MODIFIED="1587767085180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_1" />
-    <SUITE FILE_PATH="coverage/MIPT_Python$2_2_json_decorator.coverage" NAME="2.2.json_decorator Coverage Results" MODIFIED="1586800196383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_1" />
-    <SUITE FILE_PATH="coverage/MIPT_Python$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1587895111591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_2" />
     <SUITE FILE_PATH="coverage/MIPT_Python$1_2_hashtags.coverage" NAME="1.2.hashtags Coverage Results" MODIFIED="1586634654650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course 1" />
     <SUITE FILE_PATH="coverage/MIPT_Python$car_classes.coverage" NAME="car_classes Coverage Results" MODIFIED="1586944399946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_1" />
     <SUITE FILE_PATH="coverage/MIPT_Python$6_server.coverage" NAME="6.server Coverage Results" MODIFIED="1587764363864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_1" />
+    <SUITE FILE_PATH="coverage/MIPT_Python$test.coverage" NAME="test Coverage Results" MODIFIED="1587721248710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_1" />
+    <SUITE FILE_PATH="coverage/MIPT_Python$test_decorator.coverage" NAME="test_decorator Coverage Results" MODIFIED="1588112166807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
+    <SUITE FILE_PATH="coverage/MIPT_Python$Unittests_in_Course_2.coverage" NAME="Unittests in Course_2 Coverage Results" MODIFIED="1588162075644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_2" />
+    <SUITE FILE_PATH="coverage/MIPT_Python$3_code_refactoring.coverage" NAME="3_code_refactoring Coverage Results" MODIFIED="1587907935033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_2" />
+    <SUITE FILE_PATH="coverage/MIPT_Python$4_2_descriptor_values.coverage" NAME="4.2.descriptor_values Coverage Results" MODIFIED="1587119029077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_1" />
+    <SUITE FILE_PATH="coverage/MIPT_Python$solution.coverage" NAME="solution Coverage Results" MODIFIED="1587767085180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_1" />
+    <SUITE FILE_PATH="coverage/MIPT_Python$2_2_json_decorator.coverage" NAME="2.2.json_decorator Coverage Results" MODIFIED="1586800196383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_1" />
+    <SUITE FILE_PATH="coverage/MIPT_Python$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1587911660598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_2" />
     <SUITE FILE_PATH="coverage/MIPT_Python$5_client.coverage" NAME="5.client Coverage Results" MODIFIED="1587769427990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_1" />
     <SUITE FILE_PATH="coverage/MIPT_Python$otladaka.coverage" NAME="otladaka Coverage Results" MODIFIED="1586898630260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_1" />
-    <SUITE FILE_PATH="coverage/MIPT_Python$test.coverage" NAME="test Coverage Results" MODIFIED="1587721248710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_1" />
     <SUITE FILE_PATH="coverage/MIPT_Python$1_factorize_test.coverage" NAME="1_factorize_test Coverage Results" MODIFIED="1587895118116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_2" />
-    <SUITE FILE_PATH="coverage/MIPT_Python$4_2_descriptor_values.coverage" NAME="4.2.descriptor_values Coverage Results" MODIFIED="1587119029077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_1" />
+    <SUITE FILE_PATH="coverage/MIPT_Python$5_game_adapter.coverage" NAME="5_game_adapter Coverage Results" MODIFIED="1588164346643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_2" />
     <SUITE FILE_PATH="coverage/MIPT_Python$file_descript.coverage" NAME="file_descript Coverage Results" MODIFIED="1587077201630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Course_1" />
   </component>
 </project>
